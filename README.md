@@ -1,8 +1,11 @@
-# React + Vite
+Features One:
+There is a search option to find data. If anyone wants to donate anything form the data he can search with the category name. It will load the data.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Features Two:
+If anyone click the card he can see the donate page.Then he can donate as much he can.If clicking donate btn he there will be shown a sweet toast.Which is very interesting to watch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Features Three: 
+After donate anyone can see how many card he clicked to donate.And finally there is added a statistics page. Which will be shown a "statistics charts". It looks so interesting. 
+
