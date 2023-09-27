@@ -1,9 +1,9 @@
-import React from 'react';
+import PiesChart from "../../Components/PiesChart";
 
 const Statistics = () => {
     return (
-        <div>
-            <h2>This is Statistics </h2>
+        <div className="flex justify-center items-center h-[80vh]">
+            <PiesChart></PiesChart>
         </div>
     );
 };
