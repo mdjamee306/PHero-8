@@ -49,22 +49,34 @@ const PiesChart = () => {
     { name: "second", value: yourDonationTotal || 0 },
   ];
   return (
-    <PieChart width={300} height={300}>
-      <Pie
-        data={data}
-        cx="50%"
-        cy="50%"
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={150}
-        fill="#8884d8"
-        dataKey="value"
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-    </PieChart>
+    <div>
+      <PieChart className="mx-auto" width={300} height={300}>
+        <Pie
+          data={data}
+          cx="50%"
+          cy="50%"
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={150}
+          fill="#8884d8"
+          dataKey="value"
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+      </PieChart>
+      <div className="flex gap-5 mt-5">
+        <div className='flex gap-2 text-center items-center'>
+          <h3 className='md:text-2xl'>Total Donation: </h3>
+          <p className='bg-[#FF3333]  font-bold h-[20px] text-[#FF3333]'>................</p>
+        </div>
+        <div className='flex gap-2 text-center items-center'>
+          <h3 className='md:text-2xl'>Your Donation: </h3>
+          <p className='bg-[#00C49F]  font-bold h-[20px] text-[#00C49F]'>................</p>
+        </div>
+      </div>
+    </div>
   );
 };
 
